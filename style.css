@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.2%;
+    font-family:"Ubuntu", sans-serif;
+}
+body{
+    font-size: 1.5rem;
+    font-family:"Ubuntu", sans-serif;
+    background-color: rgb(245, 245, 245);
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0.5px 0.5px 14px rgb(211, 211, 211);
+}
+.lifes{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.lifes button{
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+.lifes img{
+    height: 25px;
+    width: 25px;
+    margin-right: 6px;
+}
+.lifes p{
+    font-weight: bold;
+}
+.TotalHits{
+    padding-right: 10px;
+}
+.game h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.labeFl{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+#numberSelect{
+    display: block;
+}
+.inputForm{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(232, 232, 232);
+    text-align: center;
+}
+.btnForm{
+    all: unset;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius:20px;
+    box-shadow: 0.5px 0.5px 14px rgb(214, 214, 214);
+    text-align: center;
+    color: rgb(254, 118, 118);
+}
+.textInfo{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.optionOfGame{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.5px 0.5px 14px rgb(211, 211, 211);
+    text-align: center;
+    padding-top: 200px;
+}
+.optionOfGame h2{
+    padding-bottom: 20px;
+}
+.optionOfGame button{
+    margin-top: 30px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:rgb(84, 43, 229) ;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.optionOfGame button:last-child{
+    background-color:rgb(205, 83, 83) ;
+}
+
+.gameOverText{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+.winText{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: 60vh;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+}
+.winText button{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+.gameOverText button{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+
+
+.inactive{
+    display: none;
+}
+
+@media (max-width:700px) {
+    .game{
+        width: 90%;
+        padding: 20px 20px 0px 20px;
+    }
+    .optionOfGame{
+        width:90% ;
+    }
+}
